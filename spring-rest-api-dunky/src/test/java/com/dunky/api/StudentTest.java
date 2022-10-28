@@ -17,11 +17,13 @@ public class StudentTest {
 
             // Read JSON file and map/covert it to Java POJO: data/sample-lite.json.
             Student theStudent = mapper.readValue(
-                    new File("data/sample-lite.json"), Student.class);
+                    new File("data/sample-full.json"), Student.class);
 
             // Print out the last name and first name.
             System.out.println("\nFirst name: " +theStudent.getFirstName());
             System.out.println("Last name: " +theStudent.getLastName());
+            System.out.println("Student address: " +theStudent.getAddress());
+
 
         } catch (Exception exc) {
             exc.printStackTrace();
