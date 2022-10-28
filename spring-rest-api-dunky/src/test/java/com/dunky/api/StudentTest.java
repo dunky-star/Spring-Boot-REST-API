@@ -20,9 +20,17 @@ public class StudentTest {
                     new File("data/sample-full.json"), Student.class);
 
             // Print out the last name and first name.
+            System.out.println("\n=========================");
+            System.out.println("REST JSON - MANIPULATION");
+            System.out.println("=========================");
             System.out.println("\nFirst name: " +theStudent.getFirstName());
             System.out.println("Last name: " +theStudent.getLastName());
-            System.out.println("Student address: " +theStudent.getAddress());
+
+            // Print out the address: street and city
+            Address tempAddress = theStudent.getAddress();
+            System.out.println("\nStudent city is: " + tempAddress.getCity() +
+                             " and student street is: " +tempAddress.getStreet());
+            System.out.println("======================================================\n");
 
 
         } catch (Exception exc) {
