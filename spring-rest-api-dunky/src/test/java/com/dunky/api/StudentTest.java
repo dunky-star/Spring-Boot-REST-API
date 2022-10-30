@@ -29,9 +29,13 @@ public class StudentTest {
             // Print out the address: street and city
             Address tempAddress = theStudent.getAddress();
             System.out.println("\nStudent city is: " + tempAddress.getCity() +
-                             " and student street is: " +tempAddress.getStreet());
+                             " and student street is: " + tempAddress.getStreet());
             System.out.println("======================================================\n");
 
+            // Print out languages
+            for(String tempLang: theStudent.getLanguages()){
+                System.out.println(tempLang);
+            }
 
         } catch (Exception exc) {
             exc.printStackTrace();
