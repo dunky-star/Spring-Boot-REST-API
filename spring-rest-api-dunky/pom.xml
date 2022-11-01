@@ -30,7 +30,7 @@
 			<optional>true</optional>
 		</dependency>
 
-		<!--Add support for endpoints to monitor and manage your app -->
+		<!--Add support for Spring Boot Actuator to monitor metrics and manage your API -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
