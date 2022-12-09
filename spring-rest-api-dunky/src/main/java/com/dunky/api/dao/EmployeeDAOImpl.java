@@ -34,7 +34,7 @@ public class EmployeeDAOImpl implements EmployeeDAO{
 
         // execute query and get result list
         List<Employee> employees = theQuery.getResultList();
-        
+
         // return the results
         return employees;
     }

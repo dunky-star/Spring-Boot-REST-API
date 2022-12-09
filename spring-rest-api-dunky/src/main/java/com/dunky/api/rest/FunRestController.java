@@ -18,4 +18,10 @@ public class FunRestController {
     public String getDailyWorkout(){
         return "Run a hard 10K";
     }
+
+    // Expose a new end-point for "Fortune"
+    @GetMapping("/fortune")
+    public String getDailyFortune(){
+        return "Today, is your lucky day!";
+    }
 }
