@@ -4,6 +4,6 @@ import com.dunky.api.entity.Employee;
 
 import java.util.List;
 
-public interface EmployeeDAO {
+public interface EmployeeDAOHibernate {
     public List<Employee> findAll();
 }

@@ -11,14 +11,14 @@ import javax.persistence.EntityManager;
 import java.util.List;
 
 @Repository
-public class EmployeeDAOImpl implements EmployeeDAO{
+public class EmployeeDAOHibernateImpl implements EmployeeDAOHibernate{
 
     // define field for the Entity manager
     private EntityManager entityManager;
 
     // set up constructor injection
     @Autowired
-    public EmployeeDAOImpl(EntityManager theEntityManager) {
+    public EmployeeDAOHibernateImpl(EntityManager theEntityManager) {
         entityManager = theEntityManager;
     }
     @Override
